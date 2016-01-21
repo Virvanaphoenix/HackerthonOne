@@ -1,0 +1,82 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitignore
+* AndBase.iml
+* AndBase1.iml
+* Doxyfile
+* LICENSE-2.0.txt
+* README.md
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.+
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => andBase\src\main\AndroidManifest.xml
+* libs\android-support-v13.jar => andBase\libs\android-support-v13.jar
+* libs\glide-3.6.0.jar => andBase\libs\glide-3.6.0.jar
+* libs\ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar => andBase\libs\ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar
+* libs\nineoldandroids-2.4.0.jar => andBase\libs\nineoldandroids-2.4.0.jar
+* libs\xUtils-2.6.14.jar => andBase\libs\xUtils-2.6.14.jar
+* proguard-project.txt => andBase\proguard-project.txt
+* res\ => andBase\src\main\res\
+* src\ => andBase\src\main\java\
+* src\com\ab\util\image\arrow.png => andBase\src\main\resources\com\ab\util\image\arrow.png
+* src\com\ab\util\image\crop_big.png => andBase\src\main\resources\com\ab\util\image\crop_big.png
+* src\com\ab\util\image\crop_small.png => andBase\src\main\resources\com\ab\util\image\crop_small.png
+* src\com\ab\util\image\play_display.png => andBase\src\main\resources\com\ab\util\image\play_display.png
+* src\com\ab\util\image\play_hide.png => andBase\src\main\resources\com\ab\util\image\play_hide.png
+* src\com\ab\util\image\zoom-1.png => andBase\src\main\resources\com\ab\util\image\zoom-1.png
+* src\com\ab\util\image\zoom_in.png => andBase\src\main\resources\com\ab\util\image\zoom_in.png
+* src\com\ab\util\image\zoom_out.png => andBase\src\main\resources\com\ab\util\image\zoom_out.png
+* src\com\ab\view\carousel\package.html => andBase\src\main\resources\com\ab\view\carousel\package.html
+* src\com\ab\view\chart\package.html => andBase\src\main\resources\com\ab\view\chart\package.html
+* src\com\ab\view\slidingmenu\package.html => andBase\src\main\resources\com\ab\view\slidingmenu\package.html
+
+Missing Android Support Repository:
+-----------------------------------
+Some useful libraries, such as the Android Support Library, are
+installed from a special Maven repository, which should be installed
+via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Android Support Repository". You may also want to install the
+"Google Repository" if you want to use libraries like Google Play
+Services.
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
