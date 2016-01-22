@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/text_native"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="设置等车时间"
+        android:textColor="@color/main"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView_selsct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/native_corner_bg"
+        android:dropDownSelector="@color/gray"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/text_persion_light_black"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -2,22 +2,77 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sks.myuber" >
 
+
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- 摄影机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:name=".WelcomActivity"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".SettingActivity" />
+        <activity
+            android:name=".SettingAddressActivity" />
+        <activity
+            android:name=".InterestActivity"/>
+        <activity
+            android:name=".SettingTimeActivity" />
+        <activity
+            android:name=".WeekupTimeActivity" />
+        <activity
+            android:name=".NewGuideActivity" />
+        <activity
+            android:name=".BreakfastActivity" />
+        <activity
+            android:name=".wheel.PayResultActivity"/>
+        <activity
+            android:name=".GoPayActivity" />
+        <activity android:name=".LoginActivity">
+        </activity>
+        <activity android:name=".PinCarActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+
+        </activity>
+        <service android:enabled="true" android:name=".MyService" />
+        <!-- 拨打电话 -->
+        <receiver android:name=".MyBrodcast">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+                <action android:name="qqwwee" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

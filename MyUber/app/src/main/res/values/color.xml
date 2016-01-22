@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <drawable name="white">#FFFFFFFF</drawable>
+  <drawable name="black">#000000</drawable>
+  <drawable name="blue">#0000FF</drawable>
+  <drawable name="red">#FF0000</drawable>
+  <color name="main">#129D91</color>
+  <color name="black">#999999</color>
+  <color name="divider2">#41e4e4e4</color>
+  <color name="gray">#607D8B</color>
+  <color name="text_persion_light_black">#a3a3a3</color>
+  <color name="text">#212121</color>
+  <color name="white">#ffffff</color>
+  <color name="green">#000000</color>
+  <color name="green_press">#212121</color>
+  <color name="green_yuan">#009944</color>
+  <color name="red_yuan">#fa364a</color>
+  <color name="title">#f2f2f4</color>
+  <color name="blue">#21b9d6</color>
+  <color name="title_text">#3c3c3c</color>
+  <color name="guide_btn_unselece">#14009688</color>
+  <color name="lock_circle_unlinked">#dd009688</color>
+</resources>

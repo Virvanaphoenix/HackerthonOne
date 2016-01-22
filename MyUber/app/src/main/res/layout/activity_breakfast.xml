@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/title"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:paddingLeft="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="是"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:id="@+id/textView" />
+
+        <CheckBox
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:id="@+id/cb_boy"
+            android:button="@drawable/select_chectbox"
+            android:gravity="center"
+            android:checked="true"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="否"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:id="@+id/textView2" />
+
+        <CheckBox
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:id="@+id/cb_girl"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:button="@drawable/select_chectbox"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/lin"
+        android:id="@+id/lv_break" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lv_break"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tv_b_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/selecter_next"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

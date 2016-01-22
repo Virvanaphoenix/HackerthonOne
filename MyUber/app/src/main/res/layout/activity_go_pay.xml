@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/title"
+        android:text="您将获得"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20sp"  />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:drawableLeft="@drawable/alarm"
+           android:gravity="center"
+           android:textSize="18sp"
+           android:layout_marginLeft="30dp"
+           android:drawablePadding="15dp"
+           android:text="每天定时的司机叫早"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ear"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:drawablePadding="15dp"
+            android:text="每天25min的音频资讯"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/car"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:drawablePadding="15dp"
+            android:text="每天快递的上班送达"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/coffee"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:drawablePadding="15dp"
+            android:text="每天贴心的司机早餐"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/total_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="120"
+            android:layout_centerInParent="true"
+            android:id="@+id/money"
+            android:textSize="54sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共计"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:layout_alignBottom="@+id/money"
+            android:layout_toLeftOf="@+id/money"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="元"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignBottom="@+id/money"
+            android:layout_toRightOf="@+id/money"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="定制您从1.18~1.22的起床计划"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/tv_time_next"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_time_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/selecter_next"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="去支付"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

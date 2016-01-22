@@ -1,25 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+<AbsoluteLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/layout1"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/white"
+>
+  <DigitalClock
+    android:id="@+id/dClock"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="40dp"
+    android:textColor="@drawable/blue"
+    android:layout_x="30dp"
+    android:layout_y="32dp"
+  />
+  <TextView
+    android:id="@+id/text1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/str_title1"
+    android:textSize="20dp"
+    android:textColor="@drawable/black"
+    android:layout_x="10dp"
+    android:layout_y="102dp"
+  />
+  <Button
+    android:id="@+id/mButton1"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:text="@string/str_button1"
+    android:textColor="@drawable/black"
+    android:textSize="18dp"
+    android:layout_x="190dp"
+    android:layout_y="102dp"
+  />
+  <Button
+    android:id="@+id/mButton2"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:text="@string/str_button2"
+    android:textColor="@drawable/black"
+    android:textSize="18dp"
+    android:layout_x="190dp"
+    android:layout_y="145dp"
+  />
 
-    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
-        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
-            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_main" />
-
-    <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
-        android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" />
-
-</android.support.design.widget.CoordinatorLayout>
+  <TextView
+    android:id="@+id/setTime1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/str_default"
+    android:textColor="@drawable/red"
+    android:textSize="16dp"
+    android:layout_x="10dp"
+    android:layout_y="142dp"
+  />
+</AbsoluteLayout>

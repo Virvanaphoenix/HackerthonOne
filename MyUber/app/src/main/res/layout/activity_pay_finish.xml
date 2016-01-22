@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/title"
+        android:text="支付结果"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20sp"  />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:drawableTop="@drawable/success"
+        android:layout_centerInParent="true"
+        android:text="支付成功"
+        android:textSize="18sp"
+        android:textColor="#21b9e6"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
