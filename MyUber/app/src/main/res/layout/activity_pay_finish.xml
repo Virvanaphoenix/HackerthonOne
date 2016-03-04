@@ -14,15 +14,17 @@
         android:textColor="@color/black"
         android:gravity="center"
         android:textSize="20sp"  />
-
+    <com.example.sks.myuber.view.DrawHookView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/view" />
     <TextView
         android:layout_width="wrap_content"
-        android:drawableTop="@drawable/success"
-        android:layout_centerInParent="true"
-        android:text="支付成功"
-        android:textSize="18sp"
-        android:textColor="#21b9e6"
-        android:gravity="center"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="上传成功"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sks.myuber" >
+    package="com.example.sks.myuber">
 
 
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
@@ -29,10 +29,10 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        android:theme="@android:style/Theme.Light.NoTitleBar">
         <activity
             android:name=".WelcomActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -40,31 +40,25 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".SettingAddressActivity" />
+        <activity android:name=".InterestActivity" />
+        <activity android:name=".SettingTimeActivity" />
+        <activity android:name=".WeekupTimeActivity" />
+        <activity android:name=".NewGuideActivity" />
+        <activity android:name=".BreakfastActivity" />
+        <activity android:name=".PayResultActivity" />
+        <activity android:name="com.example.sks.myuber.GoPayActivity" />
+        <activity android:name=".LoginActivity"></activity>
         <activity
-            android:name=".SettingActivity" />
-        <activity
-            android:name=".SettingAddressActivity" />
-        <activity
-            android:name=".InterestActivity"/>
-        <activity
-            android:name=".SettingTimeActivity" />
-        <activity
-            android:name=".WeekupTimeActivity" />
-        <activity
-            android:name=".NewGuideActivity" />
-        <activity
-            android:name=".BreakfastActivity" />
-        <activity
-            android:name=".wheel.PayResultActivity"/>
-        <activity
-            android:name=".GoPayActivity" />
-        <activity android:name=".LoginActivity">
-        </activity>
-        <activity android:name=".PinCarActivity"
+            android:name=".PinCarActivity"
             android:theme="@android:style/Theme.Light.NoTitleBar">
 
         </activity>
-        <service android:enabled="true" android:name=".MyService" />
+
+        <service
+            android:name=".MyService"
+            android:enabled="true" />
         <!-- 拨打电话 -->
         <receiver android:name=".MyBrodcast">
             <intent-filter>

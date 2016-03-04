@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/divider2" />
-    <!--popupwindow 圆角背景-->
-    <corners
-        android:radius="200dp" />
-</shape> 
+<solid android:color="@color/divider2" />
+<!--popupwindow 圆角背景-->
+<corners
+    android:radius="200dp" />
+</shape>

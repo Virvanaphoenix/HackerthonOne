@@ -33,6 +33,6 @@ public class WelcomActivity extends Activity {
                 }
                 WelcomActivity.this.finish();
             }
-        }, 1500);// 这里百毫秒
+        }, 1500);// 这里毫秒
     }
 }
